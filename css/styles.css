@@ -1,0 +1,26 @@
+.darkBG {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../images/holly.jpg');
+  height: 600px;
+}
+.darkA {
+  background: #888;
+}
+.darkB {
+  background: #777;
+}
+
+header {
+  /* background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../images/holly.jpg'); */
+  color: white;
+  background-size: auto;
+  background-position: right;
+  height: 100%;
+}
+
+img {
+  width: 90px;
+}
+
+.goright {
+  float: right;
+}
