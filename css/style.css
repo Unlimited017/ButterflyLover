@@ -21,3 +21,7 @@ ul li a:active {
     color: white;
     text-decoration: none;
   }
+.butterfly {
+  width: 400px;
+  height: 300px;
+}
