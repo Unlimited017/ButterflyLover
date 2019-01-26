@@ -1,27 +1,37 @@
-.title {
-      background: deepskyblue;
+header {
+      background: #7abaff;
+      /* width: auto; */
+      height:  300px;
       color: white;
-      margin: 10px;
     }
-
-ul li {
+header ul {
+  background-color: #0056b3;
+  padding: 10px;
+}
+header ul li {
       display: inline;
       font-size: 26px;
-      margin: 10px;
+      margin: 20px;
     }
 
-ul li a {
+header ul li a {
       color: inherit;
        }
-ul li a:hover {
-     color: blue;
+header ul li a:hover {
+     color: deepskyblue;
      text-decoration: none;
    }
-ul li a:active {
+header ul li a:active {
     color: white;
     text-decoration: none;
   }
 .butterfly {
   width: 400px;
   height: 300px;
+}
+.holly1 {
+  background-color: #dee2e6;
+}
+.holly1 h2{
+  margin-top: 100px;
 }
