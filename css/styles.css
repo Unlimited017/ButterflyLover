@@ -1,26 +1,41 @@
+
 .darkBG {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../images/holly.jpg');
-  height: 600px;
-}
-.darkA {
-  background: #888;
-}
-.darkB {
-  background: #777;
-}
-
-header {
-  /* background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('../images/holly.jpg'); */
-  color: white;
-  background-size: auto;
-  background-position: right;
-  height: 100%;
+  background-image:url("../images/Flowerbg4.png");
+  height: 670px;
+  max-height: 100%;
+  width: 1920px;
+  max-width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-img {
-  width: 90px;
+.darkBG img {
+  width: 30%;
 }
 
-.goright {
+.option {
+  margin-top: 10px;
+}
+
+.option h2,table {
+  margin-top: 20px;
+}
+
+.menu {
   float: right;
+  margin-top: 40px;
+}
+.menu a {
+  background-color: rgba(100, 150, 150,0.5);
+  color: white;
+  padding: 15px 30px;
+}
+.menu a:hover {
+  background-color: rgba(100, 150, 150);
+  text-decoration: none;
+}
+.menu a:active {
+  background-color: rgba(100, 200, 150);
 }
