@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Javascript -->
+    <script src="main.js"></script>
     <title>Butterfly Lover</title>
   </head>
   <body>
@@ -41,44 +43,49 @@
         </div>
 
     </header>
+<div class="" align="center" >
+  <h1 >Butterfly lover.</h1>
+  <button type="button" class="btn btn-secondary" onclick="RevealVideo()">Life Cycle</button>
+  <button type="button" class="btn btn-secondary" onclick="RevealTable()">Table</button>
+  <div  id="HiddenVideo" style="display:none" class="container">
+    <h2>Life Cycle</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/O1S8WzwLPlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
-      <h1>Butterfly lover.</h1>
-      <div class="container">
-        <h2>Life Cycle</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/O1S8WzwLPlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="container" >
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Types of Butterfly.</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+  <div class="container">
+    <table id="Hiddentable" style="display:none" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Types of Butterfly.</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
 
 
 
