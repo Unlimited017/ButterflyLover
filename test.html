@@ -10,8 +10,34 @@
     <!-- Javascript -->
     <script src="main.js"></script>
     <title>Flower Lover</title>
+    <style >
+
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+
+    @-webkit-keyframes animatebottom {
+      from { bottom:-100px; opacity:0 }
+      to { bottom:0px; opacity:1 }
+    }
+
+    @keyframes animatebottom {
+      from{ bottom:-100px; opacity:0 }
+      to{ bottom:0; opacity:1 }
+    }
+
+    #Aboutpage {
+      display: none;
+      text-align: center;
+    }
+
+    </style>
   </head>
-  <body>
+  <body onload="myFunction()">
 
     <header>
           <div class="darkBG" >
@@ -21,7 +47,7 @@
             <div class="menu">
                 <a  href="#">Home</a>
                 <a  href="#Aboutpage">About</a>
-                <a  href="#">Type</a>
+                <a  href="Modal.html">Type</a>
                 <a  href="#">Collection</a>
                 <a  href="#">Shop</a>
             </div>
@@ -32,13 +58,18 @@
 
     <div class="Sidebar col-sm-2">
       Side Bar.
+      <div class="card" style="width: 18rem;">
+        <img src="images/pink.jpg" height="auto" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
 
-      <div class="spinner-border" role="status">
-  <span class="sr-only">Loading...</span>
-</div>
-    </div>
+      </div>
 
-    <div class="container  col-sm-7">
+    <div  align="center" class="container  col-sm-7">
       <div id="content" class="option" align="center" >
         <button type="button" style="background-color:deepskyblue" class="btn btn-secondary" onclick="RevealVideo()">FlowerGlow</button>
         <button type="button" class="btn btn-secondary" onclick="RevealTable()">Table</button>
@@ -81,8 +112,10 @@
         </div>
 
       </div>
-
-      <div id="Aboutpage"  align="center">
+      <div id="loader" class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div id="Aboutpage"  align="center" style="display:none;" class="animate-bottom">
         <h1>About this page.</h1>
         <p>We want to create the website that can tell you about any flower in the world (May be.)</p>
         <img src="images/crystal.jpg" \>
@@ -93,7 +126,22 @@
 
     </div>
 
-</div>
+    </div>
+
+    <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 1000);
+
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("Aboutpage").style.display = "block";
+    }
+    </script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
