@@ -1,9 +1,9 @@
 
 .darkBG {
-  background-image:url("../images/Flowerbg4.png");
+  background-image:url("../images/Flowerbg5.png");
   height: 670px;
   max-height: 100%;
-  width: 1920px;
+  width: 1900px;
   max-width: 100%;
     /* Center and scale the image nicely */
     background-position: center;
@@ -38,4 +38,15 @@
 }
 .menu a:active {
   background-color: rgba(100, 200, 150);
+}
+
+.Sidebar {
+  margin-left: 30px;
+  height: auto;
+  background-color: deepskyblue;
+}
+
+.Rightbar {
+  background-color: grey;
+
 }
