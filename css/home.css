@@ -1,0 +1,60 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+body {
+  background: url('../images/BG1.svg') no-repeat;
+  background-size: cover;
+  padding-bottom: auto;
+}
+
+.Welcome {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+.Welcome h2{
+  padding-bottom: 5%;
+}
+.Welcome p{
+  padding-left: 10%;
+  font-size: 140%;
+}
+
+nav a {
+  color: white;
+  padding: 1.2%;
+  float: right;
+  font-size: 24px;
+}
+nav a:hover {
+  text-decoration: none;
+}
+
+#logo {
+  position: fixed;
+  top: 60%;
+  right: 0;
+}
+/*
+button a{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px 30px;
+  background-color: rgb(200,250,150,0.5);
+  border: none;
+  border-radius: 20px;
+}
+button a:hover {
+  color: white;
+  background-color: rgb(200,250,150,0.3);
+  text-decoration: none;
+}
+
+button a:active {
+  background-color: rgb(100,200,100);
+} */

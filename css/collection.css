@@ -1,0 +1,37 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  color: white;
+}
+
+body {
+  background: url('../images/BG1.svg') no-repeat;
+  background-size: cover;
+  padding-bottom: auto;
+}
+nav a {
+  color: white;
+  padding: 1.2%;
+  float: right;
+  font-size: 24px;
+}
+nav a:hover {
+  text-decoration: none;
+}
+.content {
+  background-color: rgb(0,0,0,0.2);
+  padding-bottom: auto;
+  top: 30%;
+  left: 10%;
+  position: absolute;
+  color: lightgrey;
+}
+#popovertest {
+  color: deepskyblue;
+
+}
+#popovertest a {
+  color: inherit;
+
+}
