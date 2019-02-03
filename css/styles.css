@@ -28,25 +28,55 @@
   margin-top: 40px;
 }
 .menu a {
+  -webkit-background-color: rgba(100, 150, 150,0.5);
   background-color: rgba(100, 150, 150,0.5);
   color: white;
   padding: 15px 30px;
 }
 .menu a:hover {
+  -webkit-background-color: rgba(100, 150, 150);
   background-color: rgba(100, 150, 150);
   text-decoration: none;
 }
 .menu a:active {
+  -webkit-background-color: rgba(100, 200, 150);
   background-color: rgba(100, 200, 150);
 }
 
 .Sidebar {
   margin-left: 30px;
   height: auto;
-  background-color: deepskyblue;
+  background-color: rgba(100, 150, 150,0.5);
 }
 
 .Rightbar {
-  background-color: grey;
+  background-color: rgba(190, 200, 180,0.5);
 
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#Aboutpage {
+  display: none;
+  text-align: center;
+}
+
+#loader {
+  margin-top: 20px;
 }

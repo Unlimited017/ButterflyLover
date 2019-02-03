@@ -7,35 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="x-foo.html">
     <!-- Javascript -->
     <script src="main.js"></script>
     <title>Flower Lover</title>
-    <style >
 
-    .animate-bottom {
-      position: relative;
-      -webkit-animation-name: animatebottom;
-      -webkit-animation-duration: 1s;
-      animation-name: animatebottom;
-      animation-duration: 1s
-    }
-
-    @-webkit-keyframes animatebottom {
-      from { bottom:-100px; opacity:0 }
-      to { bottom:0px; opacity:1 }
-    }
-
-    @keyframes animatebottom {
-      from{ bottom:-100px; opacity:0 }
-      to{ bottom:0; opacity:1 }
-    }
-
-    #Aboutpage {
-      display: none;
-      text-align: center;
-    }
-
-    </style>
   </head>
   <body onload="myFunction()">
 
@@ -54,20 +30,18 @@
           </div>
     </header>
     <div class="row">
-
-
     <div class="Sidebar col-sm-2">
       Side Bar.
       <div class="card" style="width: 18rem;">
         <img src="images/pink.jpg" height="auto" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to b uild on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
 
-      </div>
+    </div>
 
     <div  align="center" class="container  col-sm-7">
       <div id="content" class="option" align="center" >
@@ -121,26 +95,17 @@
         <img src="images/crystal.jpg" \>
       </div>
     </div>
-    <div class="Rightbar container col-sm-2">
+    <div class="Rightbar containe r col-sm-2">
         rightbar
+        <div id="host">
+          <h1>My Component</h1>
+          <x-foo></x-foo>
+        </div>
 
     </div>
 
     </div>
 
-    <script>
-    var myVar;
-
-    function myFunction() {
-      myVar = setTimeout(showPage, 1000);
-
-    }
-
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("Aboutpage").style.display = "block";
-    }
-    </script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

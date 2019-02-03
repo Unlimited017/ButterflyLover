@@ -16,3 +16,15 @@ function RevealTable() {
     document.getElementById("Hiddentable").style.display = 'none';
   }
 }
+
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 500);
+
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("Aboutpage").style.display = "block";
+}
