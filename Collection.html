@@ -5,8 +5,13 @@
     <link rel="stylesheet" href="css/collection.css">
       <script src="main.js"></script>
     <title>Flower Lover</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   </head>
   <body>
 
@@ -18,7 +23,9 @@
           </nav>
 
         <div class="content col-sm-10">
-          <table class="table table-hover">
+          <h1 style="margin-bottom:50px">Collection</h1>
+          <a  id="popovertest" href="#" data-toggle="popover" title="Aconitum" data-placement="auto" data-content="">aaa</a>
+          <!-- <table class="table table-hover">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -46,10 +53,90 @@
                 <td>@twitter</td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
+          <div class="container">
+            <div class="flip3D" >
+              <div class="back">
+                  <a  id="popovertest" href="#" data-toggle="popover" title="Aconitum" data-placement="auto" data-content="commonly known as aconite, monkshood, wolf's bane, leopard's bane, mousebane, women's bane, devil's helmet, queen of poisons, or blue rocket, is a genus of over 250 species of flowering plants belonging to the family Ranunculaceae. These herbaceous perennial plants are chiefly native to the mountainous parts of the Northern Hemisphere,[3] growing in the moisture-retentive but well-draining soils of mountain meadows. Most species are extremely poisonous[4] and must be dealt with very carefully.">
+                <img   src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Aconitum_variegatum_110807f.jpg/1024px-Aconitum_variegatum_110807f.jpg">
+              </a></div>
+              <div class="front">
+                <p>Aconitum</p>
+              </div>
+            </div>
+            <div class="flip3D">
+              <div class="back">
+                <a  id="popovertest" href="#" data-toggle="popover" title="Osteospermum" data-placement="auto" data-content=" is a genus of flowering plants belonging to the Calenduleae, one of the smaller tribes of the sunflower/daisy family Asteraceae. They are known as the daisybushes[3] or African daisies.">
+                <img   src="https://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023175.jpg?width=940&height=940">
+                </a>
+              </div>
+              <div class="front">
+                <p>African Daisy</p>
+              </div>
+            </div>
+            <div class="flip3D">
+              <div class="back">
+                  <a  id="popovertest" href="#" data-toggle="popover" title="Aconitum" data-placement="auto" data-content=""></a>
+                <img   src="images/crystal.jpg">
+              </div>
+              <div class="front">
+                <p>Rose</p>
+              </div>
+            </div>
+            <div class="flip3D">
+              <div class="back">
+                <img   src="images/crystal.jpg">
+              </div>
+              <div class="front">
+                <p>Rose</p>
+              </div>
+            </div>
+            <div class="flip3D">
+              <div class="back">
+                <img   src="images/crystal.jpg">
+              </div>
+              <div class="front">
+                <p>Rose</p>
+              </div>
+            </div>
+            <div class="flip3D">
+              <div class="back">
+                <img   src="images/crystal.jpg">
+              </div>
+              <div class="front">
+                <p>Rose</p>
+              </div>
+            </div>
+            <div class="flip3D">
+              <div class="back">
+                <img   src="images/crystal.jpg">
+              </div>
+              <div class="front">
+                <p>Rose</p>
+              </div>
+            </div>
+            <div class="flip3D">
+              <div class="back">
+                <img   src="images/crystal.jpg">
+              </div>
+              <div class="front">
+                <p>Rose</p>
+              </div>
+            </div>
+          </div>
 
-https://www.youtube.com/watch?v=W3eJWpvIl0g FlipBoxes
         </div>
 
+
+        <script>
+          $(document).ready(function(){
+              $('[data-toggle="popover"]').popover({
+                html:true,
+                trigger: "click",
+                delay: { "show": 400, "hide": 400 }
+              });
+          });
+        </script>
   </body>
+
 </html>
