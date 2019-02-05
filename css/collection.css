@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-  background: url('../images/BG1.svg') no-repeat;
+  background: url('../images/BG1.svg');
   background-size: cover;
   padding-bottom: auto;
 }
@@ -21,7 +21,7 @@ nav a:hover {
 }
 .content {
   background-color: rgb(0,0,0,0.2);
-  padding-bottom: auto;
+  padding: auto;
   top: 20%;
   left: 10%;
   position: absolute;
@@ -55,7 +55,7 @@ nav a:hover {
   position: absolute;
   color: white;
   transform: perspective(600px) rotateY(0deg);
-  background: deepskyblue; width: 240px; height: 200px; border-radius: 7px;
+  background: url('../images/Flip.png'); width: 240px; height: 200px; border-radius: 7px;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
 }
