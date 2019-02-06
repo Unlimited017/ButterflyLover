@@ -6,7 +6,8 @@ body, html {
 }
 
 body {
-  background: url('../images/BG1.svg') no-repeat;
+  background: url('../images/BG1.svg');
+  background-attachment: fixed;
   background-size: cover;
   padding-bottom: 500px;
 }
@@ -21,8 +22,7 @@ nav a:hover {
   color: deepskyblue;
 }
 .content {
-  background-color: rgb(255,255,255,0.3);
-  -webkit-background-color: rgb(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.2);
   padding-bottom: auto;
   top: 30%;
   left: 10%;
