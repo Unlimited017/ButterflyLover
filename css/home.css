@@ -3,7 +3,6 @@ body, html {
   width: 100%;
   color: white;
 }
-
 body {
   background: url('../images/BG1.svg') no-repeat;
   background-size: cover;
@@ -38,23 +37,3 @@ nav a:hover {
   top: 60%;
   right: 0;
 }
-/*
-button a{
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px 30px;
-  background-color: rgb(200,250,150,0.5);
-  border: none;
-  border-radius: 20px;
-}
-button a:hover {
-  color: white;
-  background-color: rgb(200,250,150,0.3);
-  text-decoration: none;
-}
-
-button a:active {
-  background-color: rgb(100,200,100);
-} */

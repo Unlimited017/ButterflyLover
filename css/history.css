@@ -21,7 +21,7 @@ nav a:hover {
   text-decoration: none;
   color: deepskyblue;
 }
-.content {
+.container {
   background-color: rgba(255,255,255,0.2);
   padding-bottom: auto;
   top: 30%;
