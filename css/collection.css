@@ -54,21 +54,29 @@ nav a:hover {
 .flip3D > .front {
   position: absolute;
   color: white;
+  -webkit-transform: perspective(600px) rotateY(0deg);
   transform: perspective(600px) rotateY(0deg);
   background: url('../images/Flip.png'); width: 240px; height: 200px; border-radius: 7px;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: transform .5s linear 0s;
+  transition: -webkit-transform .5s linear 0s;
 }
 .flip3D > .back {
   position: absolute;
+  -webkit-transform: perspective(600px) rotateY(180deg);
   transform: perspective(600px) rotateY(180deg);
   background: lightGrey; width: 240px; height: 200px; border-radius: 7px;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: transform .5s linear 0s;
+  transition: -webkit-transform .5s linear 0s;
 }
 .flip3D:hover > .front {
+  -webkit-transform: perspective( 600px ) rotateY(-180deg);
   transform: perspective( 600px ) rotateY(-180deg);
 }
 .flip3D:hover > .back {
+  -webkit-transform: perspective( 600px ) rotateY(0deg);
   transform: perspective( 600px ) rotateY(0deg);
 }
