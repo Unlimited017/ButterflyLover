@@ -1,18 +1,18 @@
 
-html {
+/* html {
   overflow: hidden;
-}
+} */
 
 body {
   height: 100vh;
   perspective: 1px;
   transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: auto;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
 }
 .parallax-wrapper {
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: auto;
   padding-top: 20vh;
   box-sizing: border-box;
   transform-style: preserve-3d;
@@ -33,10 +33,22 @@ body {
   height: 100vh;
   padding-top: 20vh;
   background-image: url('../images/BG1.svg');
+  z-index: 2;
+  position: relative;
 }
 .content {
   margin: 0 auto;
   padding: 50px;
   width: 50%;
   background: #aaa;
+}
+
+nav a {
+  color: white;
+  padding: 1.2%;
+  float: right;
+  font-size: 24px;
+}
+nav a:hover {
+  text-decoration: none;
 }
