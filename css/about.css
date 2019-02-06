@@ -11,8 +11,8 @@ body {
   /* overflow-y: auto; */
 }
 .parallax-wrapper {
-  width: auto;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   padding-top: 20vh;
   box-sizing: border-box;
   transform-style: preserve-3d;
@@ -23,7 +23,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url('../images/BG1.svg');
+  background-image: url('../images/BG6.svg');
   position: absolute;
   z-index: -1;
   transform: translateZ(-1px) scale(2);
@@ -32,7 +32,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding-top: 20vh;
-  background-image: url('../images/BG1.svg');
+  background-image: url('../images/BG7.svg');
   z-index: 2;
   position: relative;
 }
