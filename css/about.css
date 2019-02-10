@@ -1,14 +1,14 @@
 
-/* html {
+html {
   overflow: hidden;
-} */
+}
 
 body {
   height: 100vh;
   perspective: 1px;
   transform-style: preserve-3d;
-  /* overflow-x: hidden; */
-  /* overflow-y: auto; */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .parallax-wrapper {
   width: 100vw;
@@ -17,13 +17,14 @@ body {
   box-sizing: border-box;
   transform-style: preserve-3d;
 }
+
 .parallax-wrapper::before {
   content: "";
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url('../images/BG6.svg');
+  background-image: url('../images/BG1.svg');
   position: absolute;
   z-index: -1;
   transform: translateZ(-1px) scale(2);
@@ -32,7 +33,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding-top: 20vh;
-  background-image: url('../images/BG7.svg');
+  background-image: url('../images/BG1.svg');
   z-index: 2;
   position: relative;
 }
@@ -42,13 +43,77 @@ body {
   width: 50%;
   background: #aaa;
 }
-
-nav a {
-  color: white;
-  padding: 1.2%;
-  float: right;
-  font-size: 24px;
+i {
+  border: solid white;
+  border-width: 0px 5px 5px 0;
+  display: inline-block;
+  padding:5px;
+  vertical-align: top;
 }
-nav a:hover {
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -webkit-animation: buttonn 1s infinite;
+  -moz-animation: buttonn 1s infinite;
+  -o-animation: buttonn 1s infinite;
+   animation: buttonn 1s infinite;
+}
+#buttonup {
+  margin-top: 10%;
+  margin-left: 75%;
+  background-color: rgba(150, 50, 200, 0.5);
+  color: white;
+
+}
+#buttonup:hover {
+  background-color: rgba(150, 50, 200, 0.7);
+}
+
+
+@keyframes buttonn {
+  0%   { opacity:1; margin-top:  80%;}
+
+  100% { opacity:0; }
+}
+@-o-keyframes buttonn{
+  0%   { opacity:1; margin-top:  80%;}
+
+  100% { opacity:0; }
+}
+@-moz-keyframes buttonn{
+  0%   { opacity:1; margin-top:  80%;}
+
+  100% { opacity:0; }
+}
+@-webkit-keyframes buttonn{
+  0%   { opacity:1; margin-top:  80%;}
+
+  100% { opacity:0; }
+}
+
+
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+.menu li a {
+  color: white;
+  background-color: rgba(240, 250, 200, 0.5);
+  border-radius: 7px;
+  border-spacing: 10px;
+  border-color: black;
+  border-style:  double;
+  padding-left:  20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 34px;
+}
+.menu li a:hover {
+
+  background-color: rgba(200, 250, 150, 0.7);
   text-decoration: none;
 }
