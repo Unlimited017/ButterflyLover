@@ -61,32 +61,32 @@ i {
 #buttonup {
   margin-top: 10%;
   margin-left: 75%;
-  background-color: rgba(150, 50, 200, 0.5);
+  background-color: rgba(255, 0, 0, 0.3);
   color: white;
 
 }
 #buttonup:hover {
-  background-color: rgba(150, 50, 200, 0.7);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 
 @keyframes buttonn {
-  0%   { opacity:1; margin-top:  80%;}
+  50%   { opacity:1; margin-top:  80%;}
 
   100% { opacity:0; }
 }
 @-o-keyframes buttonn{
-  0%   { opacity:1; margin-top:  80%;}
+  50%   { opacity:1; margin-top:  80%;}
 
   100% { opacity:0; }
 }
 @-moz-keyframes buttonn{
-  0%   { opacity:1; margin-top:  80%;}
+  50%   { opacity:1; margin-top:  80%;}
 
   100% { opacity:0; }
 }
 @-webkit-keyframes buttonn{
-  0%   { opacity:1; margin-top:  80%;}
+  50%   { opacity:1; margin-top:  80%;}
 
   100% { opacity:0; }
 }
