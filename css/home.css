@@ -30,7 +30,69 @@ nav a {
 }
 nav a:hover {
   text-decoration: none;
+  color: skyblue;
 }
+.button {
+  color: white;
+  font-size: 30px;
+  float: right;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5%;
+  -webkit-animation: animate 1s infinite;
+  -moz-animation: animate 1s infinite;
+  -o-animation: animate 1s infinite;
+   animation: animate 1s infinite;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -10%;
+  transition: 0.5s;
+  text-decoration: none;
+
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+@keyframes animate {
+  50%   { opacity:1;}
+
+  100% { opacity:0; }
+}
+@-o-keyframes animate{
+  50%   { opacity:1;}
+
+  100% { opacity:0; }
+}
+@-moz-keyframes animate{
+  50%   { opacity:1;}
+
+  100% { opacity:0; }
+}
+@-webkit-keyframes animate{
+  50%   { opacity:1;}
+
+  100% { opacity:0; }
+}
+
 
 #logo {
   position: fixed;
